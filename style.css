@@ -1,0 +1,152 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto;
+    margin:0;
+    background:#000;
+    color: #fff;;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    border-bottom:1px solid #222;
+}
+
+header h1{
+    font-size:5rem;
+    margin:0;
+}
+
+/* CONTENT */
+
+section{
+    max-width:1300px;
+    margin:auto;
+    padding:40px 25px;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+
+.card{
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* MEDIA */
+
+video,img{
+    width:100%;
+    display:block;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download{
+    display:block;
+    text-align:center;
+    padding:12px;
+    font-size:1rem;
+    background:#ff0099;
+    color:white;
+    text-decoration:none;
+    transition:0.2s;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    padding:40px 20px;
+    border-top:1px solid #222;
+    text-align:center;
+}
+
+nav{
+    margin-bottom:15px;
+}
+
+nav a{
+    margin:0 15px;
+    color:#ff0099;
+    text-decoration:none;
+    font-size:1rem;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.copyright{
+    color:#666;
+    font-size:0.9rem;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:1024px){
+
+header h1{
+    font-size:3.5rem;
+}
+
+section{
+    padding:30px 20px;
+}
+
+.grid{
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+}
+
+}
+
+
+/* ---------- PHONE ---------- */
+
+@media (max-width:600px){
+
+header{
+    padding:40px 15px;
+}
+
+header h1{
+    font-size:2.2rem;
+}
+
+section{
+    padding:20px 15px;
+}
+
+.grid{
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:18px;
+}
+
+.download{
+    font-size:1rem;
+    padding:10px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px 10px;
+    font-size:0.95rem;
+}
+
+footer{
+    padding:30px 15px;
+}
+
+}
